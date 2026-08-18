@@ -1,0 +1,141 @@
+1. Server Component
+
+Server Component woh component hai jo server par render hota hai.
+
+Example:
+
+export default function Home() {
+  return (
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  );
+}
+
+Is mein "use client" nahi hai, isliye ye Server Component hai.
+
+Server Component mein kya kar sakte hain?
+Database se directly data fetch kar sakte hain
+Backend/server-side logic kar sakte hain
+API se data fetch kar sakte hain
+Sensitive information ko server par rakh sakte hain
+Large dependencies ko server par rakh sakte hain
+
+Example:
+
+export default async function Users() {
+  const response = await fetch("https://api.example.com/users");
+  const users = await response.json();
+
+
+  return (
+    <div>
+      {users.map(user => (
+        <p key={user.id}>{user.name}</p>
+      ))}
+    </div>
+  );
+}
+2. Client Component
+
+Client Component woh component hai jo browser/client par interactive behavior ke liye run hota hai.
+
+Iske top par:
+
+"use client";
+
+likhna hota hai.
+
+Example:
+
+"use client";
+
+
+import { useState } from "react";
+
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+
+  return (
+    <button onClick={() => setCount(count + 1)}>
+      {count}
+    </button>
+  );
+}
+
+Yahan useState aur onClick use ho rahe hain, isliye ye Client Component hai.
+
+Server Component kab use karein?
+
+Jab component ko interactivity ki zaroorat nahi ho.
+
+For example:
+
+Product list display karna
+Blog post display karna
+Database se data fetch karna
+Static content
+User profile data display karna
+SEO-important content
+Server-side data processing
+
+Example:
+
+Products Page
+      ↓
+Server Component
+      ↓
+Database
+      ↓
+Products
+      ↓
+Browser
+Client Component kab use karein?
+
+Jab component mein user interaction ho.
+
+For example:
+
+useState
+useEffect
+onClick
+onChange
+Form interaction
+Dropdown
+Modal
+Counter
+Search input
+Interactive navbar
+Browser APIs (window, localStorage etc.)
+
+Example:
+
+"use client";
+
+
+import { useState } from "react";
+
+
+export default function Search() {
+  const [search, setSearch] = useState("");
+
+
+  return (
+    <input
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+    />
+  );
+}
+Simple difference
+Server Component	Client Component
+Server par render/run hota hai	Browser/client par interactive behavior
+Default in App Router	"use client" required
+Database access possible	Browser-side interaction
+useState ❌	useState ✅
+useEffect ❌	useEffect ✅
+onClick ❌	onClick ✅
+Server-side logic	User interaction
+Less JavaScript browser ko bhejna	More JavaScript browser ko bhej sakta ha

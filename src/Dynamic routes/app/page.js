@@ -1,18 +1,15 @@
 'use client';
-
 import Link from "next/link";
-import { use } from "react";
 
-export default function Studentlist({ params }) {
-
-    const { student } = use(params);
-
-    console.log(student);
-
-    return (
+export default function Studentlis() {
+    return(
         <div>
-            <h1>Student detail</h1>
-            <h3>{student}</h3>
+            <h1>Student List</h1>
+            <ul>
+                <li><Link href="/studentlist/1">John Doe</Link> </li>
+                <li><Link href="/studentlist/2">Jane Smith</Link> </li>
+                <li><Link href="/studentlist/3">Bob Johnson</Link> </li>
+            </ul>
         </div>
-    );
+    )
 }

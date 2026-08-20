@@ -1,14 +1,9 @@
-'use client'
-import { use } from "react";
 
-export default function Study({ params }) {
-   
-    const { lecture } = use(params);
-    console.log(lecture);
-    
+
+export default function Study() {
     return (
         <div>
-            <h1>Lecture {lecture}</h1> 
+            <h1>Study page</h1> 
         </div>
     );
 }

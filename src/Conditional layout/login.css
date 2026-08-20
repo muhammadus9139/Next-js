@@ -1,0 +1,40 @@
+/* login.css */
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.container a {
+    text-decoration: none;
+    padding: 10px 18px;
+    background: #0070f3;
+    color: white;
+    border-radius: 6px;
+}
+
+.container a:hover {
+    background: #005bb5;
+}
+
+.content {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}

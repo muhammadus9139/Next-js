@@ -1,0 +1,125 @@
+16 — Rendering in Next.js
+1. Rendering kya hoti hai?
+
+Rendering ka matlab hai:
+
+React component ko process karke uska UI/HTML tayyar karna jo user browser mein dekhta hai.
+
+Simple flow:
+
+React Component
+       ↓
+   Rendering
+       ↓
+ HTML / UI
+       ↓
+    Browser
+
+Next.js ki khas baat ye hai ke rendering server aur client dono environments mein ho sakti hai.
+
+2. Rendering Environments
+
+Next.js mein mainly 2 environments hain:
+
+Server Environment
+
+Server par code execute hota hai.
+
+Server
+  ↓
+Component render
+  ↓
+HTML / RSC data
+  ↓
+Browser
+
+Server par rendering ka benefit ye hai ke browser ko kam JavaScript bhejni pad sakti hai aur data fetching server par ho sakti hai.
+
+Client Environment
+
+Client se murad user ka browser hai.
+
+Browser
+  ↓
+JavaScript
+  ↓
+Component interactive
+
+Agar component mein:
+
+useState
+useEffect
+onClick
+onChange
+browser APIs
+
+ki zaroorat hai, to Client Component use karte hain.
+
+3. Server Component vs Client Component
+
+Next.js App Router mein components by default Server Components hote hain.
+
+Server Component
+export default function Home() {
+    return <h1>Hello</h1>;
+}
+
+Ismein 'use client' nahi hai, isliye ye Server Component hai.
+
+Client Component
+'use client'
+
+
+import { useState } from 'react';
+
+
+export default function Counter() {
+    const [count, setCount] = useState(0);
+
+
+    return (
+        <button onClick={() => setCount(count + 1)}>
+            {count}
+        </button>
+    );
+}
+
+'use client' lagane se component Client Component ban jata hai.
+
+4. Component-level Client and Server Rendering
+
+Ye Next.js ki bahut important feature hai.
+
+Aapki poori website ko client ya server par render karna zaroori nahi.
+
+Har component ko uski requirement ke according choose kar sakte ho.
+
+Example:
+
+Home Page
+│
+├── Navbar          → Server Component
+│
+├── Products        → Server Component
+│
+├── LikeButton      → Client Component
+│
+└── Footer          → Server Component
+
+For example:
+
+// page.js
+import Products from './Products';
+import LikeButton from './LikeButton';
+
+
+export default function Home() {
+    return (
+        <>
+            <Products />
+            <LikeButton />
+        </>
+    );
+}
+
+Products server par render ho sakta hai aur LikeButton client par interactive ho sakta hai.

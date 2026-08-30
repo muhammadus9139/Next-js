@@ -1,0 +1,32 @@
+Build ka simple meaning hota hai:
+
+Apne code ko process karke application ka final usable version banana.
+
+Example:
+
+Aap React/Vite project bana rahe ho.
+
+Development mein aap command chalate ho:
+
+npm run dev
+
+Ye development mode mein project chalata hai.
+
+Jab website ko production/deployment ke liye ready karna ho, to:
+
+npm run build
+
+Ye aapke code ko optimize karta hai aur final files banata hai, jaise:
+
+JavaScript optimize/minify hoti hai
+CSS optimize hoti hai
+Files ka size kam hota hai
+Final production files dist folder mein ban jati hain
+Simple example:
+
+👨‍💻 Code likhna → ingredients collect karna
+🔨 Build karna → ingredients ko mila kar final product banana
+🚀 Deploy karna → final product ko internet par upload karna
+
+Short definition:
+Build = source code ko process karke production-ready application banana.

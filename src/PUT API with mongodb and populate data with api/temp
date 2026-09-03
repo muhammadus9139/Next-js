@@ -1,0 +1,2 @@
+50-PUT API with mongodb, make a new api route for PUT method, write code for updating the product, test api with postman.
+51-Populate form data with API, make API to get a single record, make route for editing the product, add input fields for edit product, declare state for adding values in input fields, call API and display data, test api with postman.

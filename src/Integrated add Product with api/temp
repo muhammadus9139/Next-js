@@ -1,0 +1,1 @@
+48-Integrated add Product with api, make link and page to addd the product, make input fields for adding products, use state to get input field data, call API to add product, test api and data in mongodb collection.

@@ -1,0 +1,93 @@
+Next js
+
+1-Intro
+2-Install & setup
+3-First program , make component, reuse component, data passing in component.
+4-Events, functions, state, Events in next js , make function and call, call component as function, Make state and update.
+5-File and folder structure, imp files for beginners, other file introduction, code flow of nextj.js
+6-Component type in next js , type of component in next js , what is server component , what is client component, where to use server component, where to use client component.
+7-Basic routing ,make new page, make a folder for the new page, make page file and write component code, route example.
+8-Linking and navigation, how to make links, how to navigate to another screen.
+9-Nested routing , what is nested routing, make nested routing, make navigation between nested pages.
+10-Common layout, make layout.js, create a navigation bar for login, add a common style for login.
+11-Conditional layout, what is conditional layout get route name by the hook, apply condition with route name.
+12-Dynamic routes, what are dynamic routes, make a folder and file for the dynamic route, write code and navigation, get dynamic route name.
+13-Catch-all segment of route, what are the segments of the route, how to get all segments of route.
+14-404 page in next js, what is 404 page, make the global 404 page, make route specific 404 page.
+15-Middleware in next js, what is middleware in next js routing, make middleware in next js app, add config matcher.
+16-Rendring in next js, Rendering environments, component-level client and server rendering, what is pre-rendering, static generation, server-side rendering.
+17-Client side vs pre rendering, how to know rendering type, check result of rendering, why this is important, SEO with rendering, How is SEO works?
+18-Fetch data in client component, create product components, make it client component, add hooks, call api, render data.
+19-Fetch data in server component, create server components for products, make a function for call api, call api, render data.
+20-Client component with server component, why do we need a client component inside, server component, make component, pass data in components, add events.
+21-CSS with next js, global css, inline css, update style with a button.
+22-CSS modules with next js, how this is different from normal css, make a modular css file, apply css module, multiple css module.
+23-Conditon with style, condition with class, condition with style attribute, css module with ID attribute, extract class from css module object.
+24-Image optimization, why use image component of next js, import and use image, use html img tag, config for image from other domain, important props in next image.
+25-Font optimization, why use next js font, how to use a normal font, how to use next js font.
+26-GenerateMetadata from dynamic meta, what is dynamic meta data, what is the use of generateMetadata, how to use generateMetadata, wrong way to use meta data, use generateMetadata with multiple route.
+27-Script component in next js, what is Script component, how to use it, example for script tag.
+28-Loader in next js, why do we need a loader in next js, call api, render data of api on screen, make loading screen, check loader.
+29-Static assets in the nextjs, how to use them in the next js code, use of images, use of css, use of js.
+30-How to make production build, what is build, type of build, what is production build, how to make production build, run production build.
+31-Export static html page with build, what is static html means, make some pages, add configuration, run build command, check html and try to run it.
+32-Static side generation , what is SSG, make a service file and call api, display data from api, make dynamic routing, make build with SSG.
+33-Redirection in next js, what is redirection, redirect from component, redirect from config file, dynamic URL redirect.
+34-Environment variables, what are environment variables, how to access environment variables.
+
+API ROUTES
+
+35-Api routes, use of api routes, make api route, test it with postman.
+36-Get api with static data, api for user detail and user list, make a static db file, make user list api, make a route for single-user api, get request params, filter result and test api.
+37-Call Next js apis, make route for screen, call user list api, display data, call user detail api, display user data, test api.
+38-Write post api, make post api function, write api response, get request params, apply validation checks,test post with postman.
+39-Integrate post api, make new page route, make a form and add input fields, define state for input fields, write code for call api, handle api response, test post api with UI, add style.
+40-PUT Api with static data, use of PUT method api, write put method api, write put method in route api file, get URL params and payload, test put api with postman.
+41-Integrate PUT Api, make new route for Put api, make link from user list page, create form and define the state, get current user details, update details and call api.
+42-Make delete api, make api route function, get id from URL, write code for delete api, test api with postman.
+43-Integrate delete api, make a component for delete user, why need delete component, call delete api method, test api with UI.
+44-Catch all api routes, what does mean by catch-all routes, make route, write code for catch-all route api, test api.
+
+Next js with atlas mongodb
+
+45-How to use mongodb atlas, make an account mongodb atlas, make project and cluster, make a databae and collection , add data in collection.
+46-Connect mongodb and next js, make an env file and add username & password, make db connection, make schema for collection, get data from mongodb to next js , make sample api with db data.
+47-Save data in DB with post API,make function for POST API, write code for saving data, get data from api request, save product data in mongodb, test api with postman.
+48-Integrated add Product with api, make link and page to addd the product, make input fields for adding products, use state to get input field data, call API to add product, test api and data in mongodb collection.
+49-Product List with mongodb, make link and page for the product list, re-create product list API, get product on API with API, display product list.
+50-PUT API with mongodb, make a new api route for PUT method, write code for updating the product, test api with postman.
+51-Populate form data with API, make API to get a single record, make route for editing the product, add input fields for edit product, declare state for adding values in input fields, call API and display data, test api with postman.
+52-Update Product with PUT api, make a function for calling API, write code for the PUT api method, Test API and updated record.
+53-Delete API with mongodb, make api in delete product, test api with postman, integrate delte api with UI , add no cache in GET api, test data with mongodb.
+54-Next js vs react js, difference between react and next js.
+55-Upload image without library, make a simple html form, get image in the state, make API for uploading images, upload the image and check image in folder.
+56-Deploy next js on versal, make next js project, upload project on GitHub, signup/login or versal.com, connect versal.com with GitHub, deploy project, error handling, verify site is deployed or not.
+
+Next js with redux toolkit
+
+1-Redux toolkit, why need redux toolkit, redux vs redux toolkit, what we learn in this course.
+2-Redux & RTK Architecture, redux main component, redux and RTK flow, how redux works.
+3-Next js and RTK installation, make next js project, install redux and redux toolkit.
+4-Folder structure, store & provider, make folder and file, make store, make provider.
+
+5-Make component in next js, make add user component, make user list component, add style for components.
+6-Make Slice in redux toolkit, what is Slice in RTK, Use of Slice, write code for slice.
+7-Send data from next to redux, get data from input field to state , import action function from slice, use dispatch hook for send data in action, check data in slice.
+8-Redux dev tools, install redux dev tool extension, use of redux dev tools, check stored data in redux, check action with dev tool.
+9-Get data from Redux to next js, import useSelector hook, display list of users, add style with user list.
+10-Remove data from redux, make action for remove data in slice, make remove button with earch user, call action on button click, write logic to remove data from redux.
+11-Redux data between pages, make page in next js, make link in page, get data from redux, add style.
+12-Redux with local storage, why we need redux with local storage, store redux data in local storage, get data from local storage to redux storage, test flow.
+13-Multiple slice in redux, make second slice, define initial state, make slice, add reducer, check flow.
+14-useSelector and useDispatch in same component, make UI elements, set data to redux store, get data from redux store, display data on UI.
+15-API call with redux toolkit, make page form display api data, make api call in slice , make reducer for api call, display api data on UI.
+16-Redux and RTK Interview questions.
+17-Task solution and bug fixes.
+18-Project code on GitHub.
+
+
+
+
+
+
+

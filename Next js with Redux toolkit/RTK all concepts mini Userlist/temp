@@ -1,0 +1,15 @@
+
+5-Make component in next js, make add user component, make user list component, add style for components.
+6-Make Slice in redux toolkit, what is Slice in RTK, Use of Slice, write code for slice.
+7-Send data from next to redux, get data from input field to state , import action function from slice, use dispatch hook for send data in action, check data in slice.
+8-Redux dev tools, install redux dev tool extension, use of redux dev tools, check stored data in redux, check action with dev tool.
+9-Get data from Redux to next js, import useSelector hook, display list of users, add style with user list.
+10-Remove data from redux, make action for remove data in slice, make remove button with earch user, call action on button click, write logic to remove data from redux.
+11-Redux data between pages, make page in next js, make link in page, get data from redux, add style.
+12-Redux with local storage, why we need redux with local storage, store redux data in local storage, get data from local storage to redux storage, test flow.
+13-Multiple slice in redux, make second slice, define initial state, make slice, add reducer, check flow.
+14-useSelector and useDispatch in same component, make UI elements, set data to redux store, get data from redux store, display data on UI.
+15-API call with redux toolkit, make page form display api data, make api call in slice , make reducer for api call, display api data on UI.
+16-Redux and RTK Interview questions.
+17-Task solution and bug fixes.
+18-Project code on GitHub.

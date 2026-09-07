@@ -1,0 +1,77 @@
+.user-container {
+    width: min(100%, 660px);
+    margin: 0 auto 18px;
+    padding: 30px;
+    background: #fffdf8;
+    border: 1px solid #e8e2d8;
+    border-radius: 18px;
+    box-shadow: 0 16px 40px rgba(47, 48, 43, 0.08);
+}
+
+.user-container h2 {
+    margin: 0 0 6px;
+    color: #252923;
+    font: 700 1.55rem/1.2 Georgia, serif;
+}
+
+.user-container::before {
+    content: "PEOPLE DIRECTORY";
+    display: block;
+    margin-bottom: 12px;
+    color: #e06b4f;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+}
+
+.user-form {
+    display: flex;
+    gap: 8px;
+}
+
+.user-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px 15px;
+    border: 1px solid #d8d2c8;
+    border-radius: 10px;
+    background: #fff;
+    color: #252923;
+    font: inherit;
+    outline: none;
+}
+
+.user-form input:focus {
+    border-color: #2c7a78;
+    box-shadow: 0 0 0 3px rgba(44, 122, 120, 0.14);
+}
+
+.user-form button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2c7a78;
+    color: white;
+    cursor: pointer;
+    font: 700 0.95rem/1 inherit;
+    transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.user-form button:hover {
+    background-color: #205f5d;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 560px) {
+    .user-container {
+        padding: 24px 20px;
+    }
+
+    .user-form {
+        flex-direction: column;
+    }
+
+    .user-form button {
+        width: 100%;
+    }
+}
